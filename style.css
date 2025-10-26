@@ -1,0 +1,52 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f8ff; /* Light sea-inspired background */
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0077b6; /* Deep sea blue */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* About, Gallery, Contact Sections */
+.about, .gallery, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
