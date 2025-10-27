@@ -1,53 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"> 
+
     <title>Welcome to Kallisti View Apartment!</title>
-    style.css
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Welcome to Kallisti View Apartment!</h1>
-            <p>Your Greek Paradise: Sun, Sea, and Sophisticated Comfort!</p>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kallisti View</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tel:+359885264036">Call Now</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="p-5 text-center bg-primary text-white mb-5" style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4">Welcome to Kallisti View Apartment!</h1>
+            <p class="lead">Your Greek Paradise: Sun, Sea, and Sophisticated Comfort!</p>
+            <a class="btn btn-light btn-lg mt-3" href="#contact" role="button">Book Your Stay!</a>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About</h2>
-        <p>
-            Luxury Maisonette in Nea Peramos – Just 150m from the Beach with Stunning Sea Views!
-            Enjoy two elegant bedrooms, two modern bathrooms, a spacious living room with a fully equipped kitchen,
-            and a private garden overlooking the sea. Perfect for a relaxing and stylish vacation by the shore.
-        </p>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery-grid">
-            images/image.png
-            images/First_Living_view-Edit_me.jpg
-            images/Outside_door.jpg
-            images/Outdoor_sofa.jpg
+    <section class="about py-5" id="about">
+        <div class="container">
+            <h2 class="text-center mb-4">About the Apartment</h2>
+            <p class="lead text-center">
+                Luxury Maisonette in Nea Peramos – Just 150m from the Beach with Stunning Sea Views!
+                Enjoy two elegant bedrooms, two modern bathrooms, a spacious living room with a fully equipped kitchen,
+                and a private garden overlooking the sea. Perfect for a relaxing and stylish vacation by the shore.
+            </p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Information</h2>
-        <p><strong>Location:</strong> Kavála, Greece · Néa Péramos, Greece</p>
-        <p><strong>Mobile:</strong> +359 88 526 4036</p>
-        <p><strong>Email:</strong> mailto:kallistiviewapartment@gmail.comkallistiviewapartment@gmail.com</a></p>
+    <section class="gallery bg-light py-5" id="gallery">
+        <div class="container">
+            <h2 class="text-center mb-5">Photo Gallery</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/First_Living_view-Edit_me.jpg" class="card-img-top img-fluid rounded" alt="First Living View">
+                        <div class="card-body">
+                            <h5 class="card-title">Living Area</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/Outdoor_sofa.jpg" class="card-img-top img-fluid rounded" alt="Outdoor Sofa">
+                        <div class="card-body">
+                            <h5 class="card-title">Outdoor Comfort</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/Outside_door.jpg" class="card-img-top img-fluid rounded" alt="Outside Door">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrance</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/image.png" class="card-img-top img-fluid rounded" alt="Apartment View 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Sea View</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Kallisti View Apartment. All rights reserved.</p>
+    <section class="contact py-5" id="contact">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Information</h2>
+            <p class="lead">Ready to book? Get in touch with us!</p>
+            <ul class="list-unstyled">
+                <li class="mb-2"><strong>Location:</strong> Kavála, Greece · Néa Péramos, Greece</li>
+                <li class="mb-2"><strong>Mobile:</strong> <a href="tel:+359885264036" class="text-decoration-none">+359 88 526 4036</a></li>
+                <li class="mb-2"><strong>Email:</strong> <a href="mailto:kallistiviewapartment@gmail.com" class="text-decoration-none">kallistiviewapartment@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="m-0">&copy; 2025 Kallisti View Apartment. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-``
