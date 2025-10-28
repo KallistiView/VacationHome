@@ -1,27 +1,17 @@
 /* Custom Fonts and General Overrides */
 body {
-    /* Use Bootstrap's font system, but with a refined fallback stack */
+    /* Ensure the body background is clean white */
     font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f8f9fa; /* Lightest gray/white for a clean look */
-    color: #343a40; /* Dark gray for good readability */
+    background-color: #ffffff; /* Pure white for bright elegance */
+    color: #343a40; 
 }
 
-/* Optional: Import a modern font like Poppins or Montserrat from Google Fonts */
-/* If you want to use this, you need to add the @import line to the very top of this file
-   or a <link> tag in your index.html <head>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-*/
-
 /* --- Hero Section Background Image --- */
-/* The HTML uses inline styles for the background image, 
-   but we'll ensure the text inside is visible and centered */
 header.p-5 {
-    /* Set a custom deep blue color if the image fails to load */
-    background-color: #0077b6 !important; 
-    /* Ensure the background image covers the area and is centered */
+    /* Updated Primary Blue: Teal/Ocean Blue */
+    background-color: #00a89d !important; 
     background-size: cover;
     background-position: center;
-    /* Add a subtle overlay for better text contrast */
     position: relative;
     overflow: hidden;
 }
@@ -33,13 +23,14 @@ header.p-5::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.35); /* Dark overlay */
-    z-index: 1; /* Place overlay behind content but above background image */
+    /* Softened the overlay for a lighter look */
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
 }
 
 header.p-5 .container {
     position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
+    z-index: 2; 
 }
 
 header h1.display-4 {
@@ -55,42 +46,49 @@ header p.lead {
 .navbar-brand {
     font-weight: 600;
     font-size: 1.5rem;
-    color: #ffc107 !important; /* Gold/Yellow accent for brand name */
+    /* Updated Accent Color: Soft Sand/Muted Gold */
+    color: #fcc742 !important; 
 }
 
 .nav-link.active, .nav-link:hover {
-    color: #ffc107 !important; /* Highlight active/hover links with accent color */
+    /* Updated Accent Color */
+    color: #fcc742 !important; 
 }
 
 /* --- Gallery Styling Refinements --- */
-/* We replaced the custom CSS grid with Bootstrap's row-cols classes, 
-   so we now just style the cards and images for visual appeal. */
 .gallery .card {
-    border: none; /* Remove default card border */
+    border: none; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery .card:hover {
-    transform: translateY(-5px); /* Lift card slightly on hover */
+    transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
 }
 
 .gallery .card-img-top {
-    height: 200px; /* Uniform height for images */
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    height: 200px; 
+    object-fit: cover; 
 }
 
 /* --- Contact Section --- */
 .contact a {
-    color: #0077b6; /* Use deep sea blue for contact links */
+    /* Updated Primary Blue: Teal/Ocean Blue */
+    color: #00a89d; 
     font-weight: 600;
 }
 .contact a:hover {
-    color: #005f96; /* Slightly darker hover color */
+    /* Updated Primary Blue (Hover) */
+    color: #008179; 
 }
 
 /* --- Footer --- */
 footer {
-    background-color: #005f96 !important; /* Darker, more sophisticated blue */
-    border-top: 5px solid #ffc107; /* Gold accent line */
+    /* Updated Secondary Blue: Soft Ocean Gray/Teal */
+    background-color: #008179 !important; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /* Updated Accent Border: Soft Sand/Muted Gold */
+    border-top: 5px solid #fcc742; 
 }
