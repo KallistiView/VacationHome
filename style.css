@@ -92,3 +92,29 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+/* --- Fix Navbar Title Visibility --- */
+/* The navbar brand text color is set to a soft gold (#fcc742), 
+   which is too light against the light navbar background. 
+   We will make the default color a dark teal and reserve the gold for hover. */
+.navbar-light .navbar-brand {
+    /* Use the dark teal for the default color */
+    color: #008179 !important; 
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-brand:hover {
+    /* Use the soft sand/gold color for the hover effect */
+    color: #fcc742 !important; 
+}
+
+/* --- Custom Viber Button Color --- */
+/* We need a custom color for the Viber button to match its brand identity */
+.btn-viber {
+    background-color: #7360F2 !important; /* Viber Purple */
+    border-color: #7360F2 !important;
+}
+
+.btn-viber:hover {
+    background-color: #5d48d0 !important; /* Slightly darker on hover */
+    border-color: #5d48d0 !important;
+}
