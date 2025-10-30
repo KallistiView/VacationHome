@@ -34,7 +34,7 @@ header.p-5 .container {
 }
 
 header h1.display-4 {
-    font-weight: 700;
+    font-weight: bold; /* or font-weight: 700; */
     letter-spacing: 1px;
 }
 
@@ -92,3 +92,4 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+
