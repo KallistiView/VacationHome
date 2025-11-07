@@ -25,26 +25,22 @@ header.p-5::before {
     bottom: 0;
     /* Softened the overlay for a lighter look */
     background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 1; 
+    z-index: 4; 
 }
 
 header.p-5 .container {
     position: relative;
-    z-index: 2; 
+    z-index: 5; 
 }
 
 /* --- STRONG OVERRIDE FOR HEADER TITLE VISIBILITY --- */
 /* Target the h1 with high specificity */
 header .container h1.display-4 {
     /* Use the highest font weight and ensure it overrides Bootstrap */
-    font-weight: 900 !important; 
+    font-weight: 700 !important; 
     
     /* Increase the text size significantly (Bootstrap display-4 is about 3rem) */
-    font-size: 4rem !important; 
-    
-    /* Add a strong black shadow for maximum contrast against the background image */
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1), /* Soft glow around text */
-                 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sharp shadow for depth */
+    font-size: 3rem !important; 
                  
     /* Ensure text is above the transparent overlay */
     position: relative; 
@@ -112,6 +108,7 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+
 
 
 
