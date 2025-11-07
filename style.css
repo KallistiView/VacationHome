@@ -34,8 +34,21 @@ header.p-5 .container {
 }
 
 header h1.display-4 {
-    font-weight: bold; /* or font-weight: 700; */
+    /* Set to the heaviest weight available for maximum boldness */
+    font-weight: 900 !important; 
+    
+    /* Add a subtle text shadow to make it 'pop' against the background image */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    
+    /* Increase font size slightly to emphasize it */
+    font-size: 3.5rem; 
+    
+    /* Keep existing style */
     letter-spacing: 1px;
+    
+    /* Ensure the text is on top of the overlay (z-index 2 is already set on the container, 
+       but setting position/z-index here is good practice if needed) */
+    position: relative; 
 }
 
 header p.lead {
@@ -92,4 +105,5 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+
 
