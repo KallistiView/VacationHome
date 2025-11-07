@@ -33,22 +33,29 @@ header.p-5 .container {
     z-index: 2; 
 }
 
-header h1.display-4 {
-    /* Set to the heaviest weight available for maximum boldness */
+/* --- STRONG OVERRIDE FOR HEADER TITLE VISIBILITY --- */
+/* Target the h1 with high specificity */
+header .container h1.display-4 {
+    /* Use the highest font weight and ensure it overrides Bootstrap */
     font-weight: 900 !important; 
     
-    /* Add a subtle text shadow to make it 'pop' against the background image */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    /* Increase the text size significantly (Bootstrap display-4 is about 3rem) */
+    font-size: 4rem !important; 
     
-    /* Increase font size slightly to emphasize it */
-    font-size: 3.5rem; 
-    
-    /* Keep existing style */
-    letter-spacing: 1px;
-    
-    /* Ensure the text is on top of the overlay (z-index 2 is already set on the container, 
-       but setting position/z-index here is good practice if needed) */
+    /* Add a strong black shadow for maximum contrast against the background image */
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1), /* Soft glow around text */
+                 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sharp shadow for depth */
+                 
+    /* Ensure text is above the transparent overlay */
     position: relative; 
+    z-index: 3; 
+}
+
+/* You may also want to slightly increase visibility of the subtitle: */
+header .container p.lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    position: relative;
 }
 
 header p.lead {
@@ -105,5 +112,6 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+
 
 
