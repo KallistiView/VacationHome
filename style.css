@@ -25,7 +25,7 @@ header.p-5::before {
     bottom: 0;
     /* Softened the overlay for a lighter look */
     background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 4; 
+    z-index: 1; 
 }
 
 header.p-5 .container {
@@ -41,12 +41,17 @@ header .container h1.display-4 {
     
     /* Increase the text size significantly (Bootstrap display-4 is about 3rem) */
     font-size: 3rem !important; 
+
+    position: relative; 
+    z-index: 3;         
                  
 }
 
 /* You may also want to slightly increase visibility of the subtitle: */
 header .container p.lead {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    position: relative; 
+    z-index: 3;
 }
 
 header p.lead {
@@ -103,6 +108,7 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+
 
 
 
