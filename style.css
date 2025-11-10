@@ -37,7 +37,7 @@ header.p-5 .container {
 /* Target the h1 with high specificity */
 header .container h1.display-4 {
     /* Use the highest font weight and ensure it overrides Bootstrap */
-    font-weight: 700 !important; 
+    font-weight: 600 !important; 
     
     /* Increase the text size significantly (Bootstrap display-4 is about 3rem) */
     font-size: 3rem !important; 
@@ -108,6 +108,7 @@ footer {
     /* Updated Accent Border: Soft Sand/Muted Gold */
     border-top: 5px solid #fcc742; 
 }
+
 
 
 
